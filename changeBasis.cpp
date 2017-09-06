@@ -1,12 +1,12 @@
 #include<iostream>
 #include<string>
 #include<algorithm>
-std::string changeBasis(int n,int k);
+std::string changeBasis(unsigned long long int n,unsigned long long int k);
 int main(){
-    std::cout<<changeBasis(15,16);
+    std::cout<<changeBasis(255,16);
     return 0;
 }
-std::string changeBasis(int n,int k){
+std::string changeBasis(unsigned long long int n,unsigned long long int k){
     std::string a;
     while(n>0){
         if(n%k<10)

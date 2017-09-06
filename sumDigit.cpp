@@ -1,7 +1,7 @@
 #include<iostream>
 int sumDigit(std::string n);
 int main(){
-    std::string n="123456";
+    std::string n="12345012345123450123450";
     std::cout<<sumDigit(n);
     return 0;
 }
