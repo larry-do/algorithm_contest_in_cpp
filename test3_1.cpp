@@ -40,7 +40,6 @@ void nextBinaryString(int n){
             }
             std::cout<<a<<std::endl;
             i=a.length()-1;
-            continue;
         }
         else
             i--;
