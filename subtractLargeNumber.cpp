@@ -18,6 +18,7 @@ std::string subtract(std::string a, std::string b){//so duong thoi
     	else k = b[i]-a[i]+mem;
     	if(k >= 0){
     		c.push_back('0'+k);
+            mem = 0;
     	}
     	else{
     		k+=10;
