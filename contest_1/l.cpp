@@ -1,6 +1,9 @@
 /*
 	Thuật toán:
-	
+	Đầu tiên, ta cần 1 mảng khoảng 11 số nguyên tố đầu tiên làm cơ sở
+	Phân tích n thành các ước, ước này phải nhỏ hơn n/ước
+	Dãy các ước tìm được (dùng quay lui) chính là dãy số mũ của 11 số nguyên tố đầu
+	Duyệt tất cả các dãy có thể, tìm được số min cần tìm
 */
 #include <iostream>
 #include <algorithm>
@@ -57,9 +60,7 @@ void Try(int n){
                 update();
                 x.pop_back();
             }
-            else{
-                Try(k);
-            }
+            else Try(k);
             x.pop_back();
         }
         i++;

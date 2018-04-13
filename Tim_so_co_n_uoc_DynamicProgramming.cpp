@@ -18,7 +18,7 @@ int main()
                 k=p[i].size()-1;
                 p[i].push_back(p[i][k]*pr[i]);               
                }
-        } 
+        }
     scanf("%d",&n);
     for (i=1;i<=n;i=i+1)
         {
